@@ -73,9 +73,9 @@
 ## 3.功能详细描述
 ### 3.1 功能划分
 + 顶层系统结构图
-> ![avatar](/pic/top.png)
+> ![avatar](pic/top.png)
 + 系统拉取提醒信息模块
-> ![avatar](/pic/top_2.png)
+> ![avatar](pic/top_2.png)
 + 快递信息提醒模块
 > ![avatar](pic/top_1.png)
 + 自主订阅模块
@@ -87,7 +87,7 @@
 + 快递信息提醒模块数据流图
 > ![avatar](pic/data_2.png)
 + 自主订阅模块数据流图
-> ![avatar](/pic/data_3.png)
+> ![avatar](pic/data_3.png)
 ---------
 
 ## 4. 外部接口需求
