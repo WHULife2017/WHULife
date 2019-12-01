@@ -1,4 +1,6 @@
 # 位置接口
+## 使用条件
+**预先导入高德定位SDK，已放入文件夹中**
 ## 使用方法
 1.定义一个OurLocation类，并实例化，需要传入当前活动上下文  
 `public OurLocation myLocation = new OurLocation(MainActivity.this);`   
