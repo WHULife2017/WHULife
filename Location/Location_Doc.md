@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
 ## UI界面设计
 ### 快递提醒界面
-![add task](./img/add_task.jpg) 
+![add task](./img/add_task.png) 
 
 
 主区域显示快递提醒信息，右下角悬浮按钮可以新增快递提醒
