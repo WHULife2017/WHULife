@@ -1,4 +1,11 @@
 # 自主订阅模块说明
+
+## 概述
+
+本模块需要用户的网络权限。在用户第一次进入该模块时要求用户选择自己的喜好，系统会将该喜好保存到本地。在用户选择查看新闻或者活动时，系统根据此喜好设置向服务端发送 http 请求，有针对性的获取消息，用户可以选择自己感兴趣的消息阅读或者添加备忘。
+
+![submodule](./readme/submodule.png)
+
 ## 1.偏好设置
 
 ### 1.1 用户偏好设定说明
@@ -96,11 +103,17 @@ protected void SavePreferenceToSP(){
 
 该模块可以根据用户之前的偏好设定进行新闻、通知等的推送，由以小标题框块展示新闻简介的链接形式供用户进行选择，当用户点击相关的推送之后就会跳转到内嵌的浏览器 WebView 组件在我们的APP内部进行网页的阅读。
 
-### 2.2 部分代码实现
+### 2.2 关键函数说明
 
+```java
+void sendRequest(final String urlStr);
+List<MNews> parseJSON(final String response);
+showResponse(final String response)
 ```
 
-```
+sendRequest 函数发送 http 请求至指定 url，通常该 url 是根据用户喜好生成的。
+
+由于 http 可能存在失败的可能，所以如果请求失败，将提示用户并退出该模块。如果成功获取数据，则自动调用 showResponse 函数，并用 parseJSON 解析数据，最后将数据以友好易懂的形式显示给用户。
 
 ---------------
 
