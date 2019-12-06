@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -25,6 +26,7 @@ public class PreferenceActivity extends AppCompatActivity {
         Button button1=(Button)findViewById(R.id.button_commit);
         Button button2=(Button)findViewById(R.id.button_reset);
         Button button3=(Button)findViewById(R.id.button_selectall);
+        InitCheckBox();
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +55,6 @@ public class PreferenceActivity extends AppCompatActivity {
     }
     /*处理用户的偏好设置 如果没选择则让用户进行重选或者不想选了就返回到上一级页面*/
     protected void SavePreferenceToSP(){
-        InitCheckBox();
         /*flag确保至少有一个选项框被选择了*/
         boolean flag=false;
         for(CheckBox checkBox:checkBoxList){
@@ -96,13 +97,11 @@ public class PreferenceActivity extends AppCompatActivity {
     }
 
     protected void PreferenceSurfaceRest(){
-        InitCheckBox();
         for(CheckBox checkbox:checkBoxList){
             checkbox.setChecked(false);
         }
     }
     protected void SelectAll(){
-        InitCheckBox();
         for(CheckBox checkbox:checkBoxList){
             checkbox.setChecked(true);
         }
