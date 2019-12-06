@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号" />
+
+    <EditText
+        android:id="@+id/id_ed"
+        android:layout_width="521dp"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码" />
+
+    <EditText
+        android:id="@+id/pwd_ed"
+        android:layout_width="521dp"
+        android:layout_height="35dp" />
+    <EditText
+        android:id="@+id/randcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <Button
+        android:id="@+id/btn_changeImg"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:onClick="onclick"
+        android:text="获取验证码" />
+
+    <Button
+        android:id="@+id/tijiao"
+        android:layout_width="77dp"
+        android:layout_height="36dp"
+        android:onClick="onclick"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/get"
+        android:layout_width="167dp"
+        android:layout_height="35dp"
+        android:onClick="onclick"
+        android:text="（登录后）更新课表" />
+
+</LinearLayout>
