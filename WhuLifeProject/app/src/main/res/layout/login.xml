@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:andriod="http://schemas.android.com/apk/res/android"
+    andriod:layout_width="match_parent"
+    andriod:layout_height="match_parent"
+    andriod:background="@mipmap/timg"
+    andriod:orientation="vertical">
+
+    <LinearLayout
+        andriod:layout_width="match_parent"
+        andriod:layout_height="match_parent"
+        andriod:orientation="vertical"
+        andriod:padding="30dp"
+        andriod:layout_marginTop="70dp">
+
+        <TextView
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:drawableLeft="@mipmap/whu"
+            andriod:text=" 珈简 "
+            andriod:textSize="50sp"
+            andriod:textColor="#222222"
+            andriod:layout_marginBottom="15dp">
+        </TextView>
+        <EditText
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:hint="学工号"
+            andriod:maxLines="1"
+            andriod:textSize="30sp"/>
+        <EditText
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:hint="密码"
+            andriod:maxLines="1"
+            andriod:textSize="30sp"
+            andriod:layout_marginBottom="15dp"/>
+        <Button
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content"
+            andriod:id="@+id/login"
+            andriod:background="#A2A0B3"
+            andriod:text="登录"
+            andriod:onClick="clicklogin"/>
+    </LinearLayout>
+    <TextView
+        andriod:layout_width="wrap_content"
+        andriod:layout_height="wrap_content"
+        andriod:layout_marginBottom="40dp"
+        andriod:text="登录即代表阅读并同意条款"
+        andriod:layout_alignParentBottom="true"
+        andriod:layout_centerHorizontal="true"
+        andriod:textColor="#222244"
+        andriod:textSize="20sp">
+    </TextView>
+
+</RelativeLayout>
