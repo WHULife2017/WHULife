@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/cno"
+        android:layout_width="532dp"
+        android:layout_height="68dp"
+        android:hint="课程号" />
+    <EditText
+        android:id="@+id/cname"
+        android:layout_width="532dp"
+        android:layout_height="68dp"
+        android:hint="课程名" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="532dp"
+        android:layout_height="68dp"
+        android:hint="上课时间如2周-16周-Fri-3-5节" />
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="532dp"
+        android:layout_height="68dp"
+        android:hint="地点如3区附3-201、1区教五-301" />
+    <Button
+        android:id="@+id/commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="提交" />
+    <Button
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onclick"
+        android:text="显示课表" />
+</LinearLayout>
