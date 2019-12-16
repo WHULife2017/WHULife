@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">WhuLife</string>
+    <string name="title_coursenotice">Packages</string>
+    <string name="title_location">Course</string>
+    <string name="title_notifications">Notification</string>
+    <string name="title_subscription">Subscription</string>
+    <string name="display">点击成功</string>
+    <string name="news_1">学术报告</string>
+    <string name="news_2">体育赛事</string>
+    <string name="news_3">梅操电影</string>
+    <string name="news_4">自强活动</string>
+    <string name="news_5">武大新闻</string>
+    <string name="news_6">假期信息</string>
+    <string name="news_7">图书馆</string>
+    <string name="news_8">名单公示信息</string>
+</resources>

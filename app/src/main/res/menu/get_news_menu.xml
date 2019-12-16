@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/news_menu_item_lecture"
+    android:title="@string/news_1"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_sports"
+        android:title="@string/news_2"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_movie"
+        android:title="@string/news_3"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_supermarket"
+        android:title="@string/news_4"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_whunews"
+        android:title="@string/news_5"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_holiday"
+        android:title="@string/news_6"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_library"
+        android:title="@string/news_7"
+        android:visible="false"/>
+    <item android:id="@+id/news_menu_item_bulletin"
+        android:title="@string/news_8"
+        android:visible="false"/>
+</menu>
