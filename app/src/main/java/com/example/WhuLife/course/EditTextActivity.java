@@ -1,4 +1,4 @@
-package com.example.WhuLife.course;
+﻿package com.example.WhuLife.course;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -102,7 +102,7 @@ public class EditTextActivity extends AppCompatActivity {
                     String location=cursor.getString(cursor.getColumnIndex("location"));
                    // System.out.println("courses" + cursor.getString(cursor.getColumnIndex("Cname")));
                     if (week_n >= start_week && week_n <= end_week) {
-                      System.out.println(week_n+"  "+ cursor.getString(cursor.getColumnIndex("Cname"))+cursor.getInt(cursor.getColumnIndex("start_time")));
+                      System.out.println(week_n+"  "+ cursor.getString(cursor.getColumnIndex("Cname"))+weekday);
                         switch (weekday) {//根据周几显示
                             case "Sun":
                                 col = 1;
@@ -124,7 +124,7 @@ public class EditTextActivity extends AppCompatActivity {
                                 col = 5;
                                 row = cursor.getInt(cursor.getColumnIndex("start_time"));
                                 break;
-                            case "Fir":
+                            case "Fri":
                                 col = 6;
                                 row = cursor.getInt(cursor.getColumnIndex("start_time"));
                                 break;
@@ -135,7 +135,7 @@ public class EditTextActivity extends AppCompatActivity {
                             default:
                                 break;
                         }
-
+                        System.out.println("i"+row);
                         course_clock[index]=new course_display(weekday,start_week,end_week,row,Latitude,Longtitude,location);
                         index++;
                     }
@@ -146,14 +146,14 @@ public class EditTextActivity extends AppCompatActivity {
             cursor.close();
 
                 clock=clockmanager.getInstance(this);
-//时间接口的问题：对于已经过了的时间会直接收到广播
+
             bt1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         for(int m=0;m<20;m++){
                             if(course_clock[m]!=null){
                                 clock.createAlarmManager(id);
-                                clock.setAlarm(course_clock[m].getday(),course_clock[m].gethour(),course_clock[m].getminute(),00);
+                                clock.setAlarm2(course_clock[m].getday(),course_clock[m].gethour(),course_clock[m].getminute(),00);
                                 id++;
                                 System.out.println(m);
                             }
@@ -170,9 +170,6 @@ public class EditTextActivity extends AppCompatActivity {
                 });
 
         }
-
-
-
      //   calendar =Calendar.getInstance(Locale.getDefault());
 
 //由于不太了解UI如何设计的，我留了一个Button专门让用户确定是否打开地点提醒，如果不需要你们可以去掉
@@ -184,11 +181,16 @@ public class EditTextActivity extends AppCompatActivity {
                     int interval=0;
                     if(course_clock[m]!=null){
                         interval=(course_clock[m].gethour()-hour)*60+course_clock[m].getminute()-minute;//计算上课时间和当前时间的差值，
-                        if(course_clock[m].getday()==day&&(interval<30||interval>-30)){//如果时间之差在-30~30之间，进行定位
-                        myLocation.setLocation(course_clock[m].getlatitude(),course_clock[m].getlongtitude());
-                        myLocation.startLocation();
+                       if(course_clock[m].getday()==day&&(interval<30&&interval>-30)){//如果时间之差在-30~30之间，进行定位
+                            myLocation.setLocation(course_clock[m].getlatitude(),course_clock[m].getlongtitude());
+                            myLocation.startLocation();
                         if(myLocation.isNear()){//如果接近，显示地点，UI可以设计一个好一的方式
                             Toast.makeText(EditTextActivity.this,course_clock[m].getlocation(),Toast.LENGTH_SHORT).show();
+                            Intent intent1 = new Intent(EditTextActivity.this, RingActivity.class);
+                            //给Intent设置标志位Flag
+                            intent1.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            intent1.putExtra("location",course_clock[m].getlocation() );
+                            EditTextActivity.this.startActivity(intent1);
                         }
                     }}
                 }

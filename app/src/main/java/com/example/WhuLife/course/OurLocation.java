@@ -90,16 +90,17 @@ public class OurLocation extends AppCompatActivity {
         @Override
         public void onLocationChanged(AMapLocation location) {
             if (null != location) {
-                System.out.println("La"+location.getLatitude());
                 //errCode等于0代表定位成功，其他的为定位失败，具体的可以参照官网定位错误码说明
                 if (location.getErrorCode() == 0) {
                     Latitude = location.getLatitude();
                     Longtitude = location.getLongitude();
                     accuracy = location.getAccuracy();
-                    System.out.println(Latitude);
+
                     DPoint t_Point = new DPoint(t_latitude, t_longtitude);
                     DPoint myPoint = new DPoint(Latitude, Longtitude);
                     distance = calculateLineDistance(t_Point, myPoint);
+                    System.out.println(Latitude+" "+Longtitude+" "+distance);
+                    System.out.println(t_latitude+" "+t_longtitude+" "+distance);
                     //Toast.makeText(context, distance+" "+accuracy, Toast.LENGTH_SHORT).show();
                     isNear();
                 }
@@ -113,21 +114,23 @@ public class OurLocation extends AppCompatActivity {
     public void setLocation(double latitude, double longtitude){
         t_latitude = latitude;
         t_longtitude = longtitude;
+
         Toast.makeText(context, "set success", Toast.LENGTH_SHORT).show();
     }
 
     //判断是否足够接近目标地点
     public static boolean isNear(){
+
         if(accuracy <= ACCURACY_LIMIT){
             if(distance <= DISTANCE_LIMIT){
 
-                Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
+           //     Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
                 return true;
             } else {
-                Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
+         //      Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
+         //   Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
         }
         return false;
     }
