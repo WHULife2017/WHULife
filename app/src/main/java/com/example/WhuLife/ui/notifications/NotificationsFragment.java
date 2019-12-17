@@ -42,9 +42,9 @@ public class NotificationsFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
     //private List<String> subscriptionNoticeNum=new ArrayList<>();
+    JSONObject subscriptionNoticeNum=new JSONObject();
     //JsonArray subscriptionNoticeNum=new JsonArray();
     /*小写的Json是google提供的 没有直接将list放入的函数*/
-    JSONObject subscriptionNoticeNum=new JSONObject();
     List<String> noticenum=new ArrayList<>();
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState)  {
@@ -73,34 +73,38 @@ public class NotificationsFragment extends Fragment {
                 //test.addProperty("Num",tmp.getKey());
                 //subscriptionNoticeNum.add(test);
             }
-            else
-                continue;
         }
         try {
             subscriptionNoticeNum.put("Num",noticenum);
         }catch (Exception e){
             e.printStackTrace();
         }
-        try{
-            getNoticeInfo();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
-        Log.d("DATA",String.valueOf(subscriptionNoticeNum));
+        new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        getNoticeInfo();
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
         Log.d("DATA",String.valueOf(prefSubscribtion.getAll()));
     }
     private void getNoticeInfo() throws IOException {
-        MediaType JSON=MediaType.parse("application/json; charset=utf-8");
-        RequestBody requestBody=RequestBody.create(JSON,String.valueOf(subscriptionNoticeNum));
-
+        MediaType JSON=MediaType.parse("text/plain; charset=utf-8");
+        //RequestBody requestBody = RequestBody.create(noticenum.toString(),JSON);
+        RequestBody requestBody = RequestBody.create(subscriptionNoticeNum.toString(),JSON);
+        Log.w("s",noticenum.toString());
         OkHttpClient client=new OkHttpClient();
         Request request = new Request.Builder()
                 .url("http://111.230.233.136:8888/api/msg/")
                 .post(requestBody)
-                .addHeader("Content-Type", "application/json")
                 .build();
+        Log.w("sbbbbb",noticenum.toString());
         Response response=client.newCall(request).execute();
+        Log.w("saaaaa",noticenum.toString());
         if(response.isSuccessful()){
             Log.d("REQUEST",String.valueOf(response));
         }else{
