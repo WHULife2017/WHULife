@@ -24,7 +24,6 @@ public class PacakgeActivity extends AppCompatActivity implements View.OnClickLi
 
     public Locate myLocation;
     public AMapLocationClient mapLocationClient = null;
-    Location goal_l = new Location(0,0,"null");
 
     private LocationDB dbHelper;
     private SQLiteDatabase db;
@@ -122,10 +121,7 @@ public class PacakgeActivity extends AppCompatActivity implements View.OnClickLi
                     //insert
                     db.insert("package", null, values);
                     values.clear();
-                    values.put("latitude", latitude);
-                    values.put("longtitude", longtitude);
-                    db.insert("target", null, values);
-                    values.clear();
+                    myLocation.setLocation(latitude, longtitude);
                 }
                 break;
             default:
