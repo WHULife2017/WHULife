@@ -10,7 +10,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 
-import com.amap.api.location.AMapLocationClient;
 import com.example.WhuLife.R;
 
 
@@ -42,7 +41,7 @@ public class LocationMainActivity extends AppCompatActivity implements OnClickLi
     public void onClick(View view){
         switch (view.getId()){
             case R.id.start:
-                Intent intent1 = new Intent(this, PacakgeActivity.class);
+                Intent intent1 = new Intent(this, PackageActivity.class);
                 startActivity(intent1);
                 break;
         }

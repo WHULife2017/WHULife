@@ -1,5 +1,6 @@
 package com.example.WhuLife.location;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -125,7 +126,11 @@ public class Locate extends AppCompatActivity {
 
     //set target location
     public void setLocation(double latitude, double longtitude){
-
+        ContentValues values = new ContentValues();
+        values.put("latitude", latitude);
+        values.put("longtitude", longtitude);
+        db.insert("target", null, values);
+        values.clear();
     }
 
 

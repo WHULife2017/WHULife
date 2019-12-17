@@ -26,7 +26,7 @@
         <activity android:name=".location.setLocation"></activity>
         <activity android:name=".location.Locate"></activity>
         <activity android:name=".location.LocationMainActivity"></activity>
-        <activity android:name=".location.PacakgeActivity"></activity>
+        <activity android:name=".location.PackageActivity"></activity>
 
         <activity
             android:name="com.example.WhuLife.ui.Login.LoginActivity"
