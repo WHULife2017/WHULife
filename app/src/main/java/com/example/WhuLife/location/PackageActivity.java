@@ -106,7 +106,7 @@ public class PackageActivity extends AppCompatActivity implements View.OnClickLi
                     double latitude = data.getDoubleExtra("latitude", 0);
                     double longtitude = data.getDoubleExtra("longtitude", 0);
                     String packageId = data.getStringExtra("packageId");
-                    if(fetchLocation!=null&&company!=null&&packageId!=null){
+                    if(fetchLocation!=""&&company!=""&&packageId!=""){
                         APackage add_one = new APackage(packageId, fetchLocation, "null", company);
                         adapter.notifyDataSetChanged();
                         packageList.add(add_one);
