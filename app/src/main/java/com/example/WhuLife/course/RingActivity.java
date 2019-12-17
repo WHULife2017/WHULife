@@ -30,9 +30,12 @@ public class RingActivity extends AppCompatActivity {
 
         //显示通知栏
         Intent intent = getIntent();
-        String locString ="闹钟响了";
-        locString=intent.getStringExtra("location");
-        info.setText(locString);
+        String String1 ="闹钟响了";
+        String locString=intent.getStringExtra("location");
+        if(locString!=null)
+            info.setText(locString);
+        else
+            info.setText(String1);
         NotificationCompat.Builder notificationCompat=new NotificationCompat.Builder(this,"default");
         //设置参数
         notificationCompat.setDefaults(NotificationCompat.DEFAULT_ALL);
