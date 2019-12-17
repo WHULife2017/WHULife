@@ -1,4 +1,4 @@
-﻿package com.example.WhuLife.course;
+package com.example.WhuLife.course;
 
 import android.content.Intent;
 import android.database.Cursor;

@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login">
 
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="15dp"
-        android:background="@color/login_other_color"
+        android:background="@color/antiquewhite"
         style="?android:attr/borderlessButtonStyle"/>
 
     <LinearLayout

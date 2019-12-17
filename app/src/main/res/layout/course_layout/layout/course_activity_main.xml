@@ -4,14 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <Button
-        android:id="@+id/btn_course_edittext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="课表部分"
-        android:textAllCaps="false"/>
+    tools:context=".MainActivity"
+    android:gravity="right|bottom"
+    android:paddingBottom="80dp"
+    android:paddingRight="30dp"
+    android:background="@mipmap/bg_login">
 
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btn_course_edittext"
+        android:background="@mipmap/coursestart"
+        android:text=""
+        android:textAllCaps="false">
+    </Button>
 
 
 </LinearLayout>
