@@ -1,6 +1,8 @@
 package com.example.WhuLife.location;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -12,6 +14,8 @@ import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.location.DPoint;
 
+
+import java.util.List;
 
 import static com.amap.api.location.CoordinateConverter.calculateLineDistance;
 
@@ -25,18 +29,20 @@ public class Locate extends AppCompatActivity {
     //target location
     public double t_latitude, t_longtitude;
     public static double distance;
-
     public static double accuracy;
 
     //mainactivity context
     private static Context context;
 
+    private SQLiteDatabase db;
+    private int i=0;
     //for location
     private AMapLocationClient mapLocationClient = null;
     private AMapLocationClientOption mapLocationClientOption = null;
 
-    public Locate(Context context){
+    public Locate(Context context, SQLiteDatabase db){
         this.context = context;
+        this.db = db;
     }
 
     //init
@@ -62,7 +68,7 @@ public class Locate extends AppCompatActivity {
         //可选，设置是否gps优先，只在高精度模式下有效。默认关闭
         mOption.setHttpTimeOut(30000);
         //可选，设置网络请求超时时间。默认为30秒。在仅设备模式下无效
-        mOption.setInterval(2000);
+        mOption.setInterval(5000);
         //可选，设置定位间隔。默认为2秒
         mOption.setNeedAddress(true);
         //可选，设置是否返回逆地理地址信息。默认是true
@@ -92,14 +98,24 @@ public class Locate extends AppCompatActivity {
             if (null != location) {
                 //errCode等于0代表定位成功，其他的为定位失败，具体的可以参照官网定位错误码说明
                 if (location.getErrorCode() == 0) {
+                    //Toast.makeText(context, "locate ",Toast.LENGTH_SHORT).show();
                     Latitude = location.getLatitude();
                     Longtitude = location.getLongitude();
-                    accuracy = location.getAccuracy();
-                    DPoint t_Point = new DPoint(t_latitude, t_longtitude);
                     DPoint myPoint = new DPoint(Latitude, Longtitude);
-                    distance = calculateLineDistance(t_Point, myPoint);
-                    //Toast.makeText(context, distance+" "+accuracy, Toast.LENGTH_SHORT).show();
-                    isNear();
+                    accuracy = location.getAccuracy();
+                    Cursor cursor = db.query("target", null,null,null,null,null, null);
+                    if(cursor.moveToFirst()) {
+                        do {
+                            t_latitude = cursor.getDouble(cursor.getColumnIndex("latitude"));
+                            t_longtitude = cursor.getDouble(cursor.getColumnIndex("longtitude"));
+                            DPoint t_Point = new DPoint(t_latitude, t_longtitude);
+                            distance = calculateLineDistance(t_Point, myPoint);
+                            if(isNear() == false){
+                                Toast.makeText(context, "locate "+t_longtitude,Toast.LENGTH_SHORT).show();
+                            }
+                        }while (cursor.moveToNext());
+                    }
+                    cursor.close();
                 }
             } else {
                 Log.e("error", "locate error");
@@ -109,22 +125,21 @@ public class Locate extends AppCompatActivity {
 
     //set target location
     public void setLocation(double latitude, double longtitude){
-        t_latitude = latitude;
-        t_longtitude = longtitude;
-        Toast.makeText(context, "set success", Toast.LENGTH_SHORT).show();
+
     }
+
 
     //判断是否足够接近目标地点
     public static boolean isNear(){
         if(accuracy <= ACCURACY_LIMIT){
             if(distance <= DISTANCE_LIMIT){
-                Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
                 return true;
             } else {
-                Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
         }
         return false;
     }
@@ -172,3 +187,5 @@ public class Locate extends AppCompatActivity {
         }
     }
 }
+
+

@@ -22,7 +22,7 @@ import java.util.List;
 
 public class PacakgeActivity extends AppCompatActivity implements View.OnClickListener {
 
-    public Locate myLocation = new Locate(this);
+    public Locate myLocation;
     public AMapLocationClient mapLocationClient = null;
     Location goal_l = new Location(0,0,"null");
 
@@ -46,15 +46,15 @@ public class PacakgeActivity extends AppCompatActivity implements View.OnClickLi
         dbHelper.getWritableDatabase();
         db = dbHelper.getWritableDatabase();
 
-
         adapter = new PackageAdapter(this, R.layout.package_item, packageList);
         ListView listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(adapter);
         initPackage();
-//        mapLocationClient = new AMapLocationClient((this.getApplicationContext()));
-//        myLocation.initLocation(mapLocationClient);
-//        myLocation.setLocation(30, 114);
-        //myLocation.startLocation();
+
+        myLocation = new Locate(this, db);
+        mapLocationClient = new AMapLocationClient((this.getApplicationContext()));
+        myLocation.initLocation(mapLocationClient);
+        myLocation.startLocation();
     }
 
     private void initPackage(){
@@ -121,6 +121,10 @@ public class PacakgeActivity extends AppCompatActivity implements View.OnClickLi
                     values.put("inform_time", "null");
                     //insert
                     db.insert("package", null, values);
+                    values.clear();
+                    values.put("latitude", latitude);
+                    values.put("longtitude", longtitude);
+                    db.insert("target", null, values);
                     values.clear();
                 }
                 break;

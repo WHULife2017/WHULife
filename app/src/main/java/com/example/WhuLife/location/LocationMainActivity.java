@@ -18,8 +18,8 @@ public class LocationMainActivity extends AppCompatActivity implements OnClickLi
 
     private Button button;
 
-    public Locate myLocation = new Locate(LocationMainActivity.this);
-    public AMapLocationClient mapLocationClient = null;
+//    public Locate myLocation = new Locate(LocationMainActivity.this);
+//    public AMapLocationClient mapLocationClient = null;
 
 
     @Override
@@ -35,7 +35,7 @@ public class LocationMainActivity extends AppCompatActivity implements OnClickLi
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        myLocation.destroyLocation();
+//        myLocation.destroyLocation();
     }
 
     @Override

@@ -26,8 +26,8 @@ public class LocationFragment extends Fragment {
 
     private Button button;
 
-    public Locate myLocation = new Locate(getContext());
-    public AMapLocationClient mapLocationClient = null;
+//    public Locate myLocation = new Locate(getContext());
+//    public AMapLocationClient mapLocationClient = null;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {

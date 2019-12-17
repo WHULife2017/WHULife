@@ -15,6 +15,10 @@ public class LocationDB extends SQLiteOpenHelper {
             + "longtitude real, "
             + "inform_time text)";
 
+    public static final String CREATE_TARGET  = "create table target ("
+            + "latitude real primary key,"
+            + " longtitude real)";
+
     private Context mContext;
 
     public LocationDB(Context context, String name, SQLiteDatabase.CursorFactory factory, int version){
@@ -25,13 +29,15 @@ public class LocationDB extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db){
         db.execSQL(CREATE_PACKAGE);
+        db.execSQL(CREATE_TARGET);
         Toast.makeText(mContext, "create success", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
-//        db.execSQL("drop table if exists package");
-//        onCreate(db);
-//        Toast.makeText(mContext, "update success", Toast.LENGTH_SHORT).show();
+        db.execSQL("drop table if exists package");
+        db.execSQL("drop table if exists target");
+        onCreate(db);
+        Toast.makeText(mContext, "update success", Toast.LENGTH_SHORT).show();
     }
 }
