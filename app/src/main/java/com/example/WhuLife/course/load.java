@@ -259,6 +259,8 @@ public class load extends AppCompatActivity {
                                 r =p.split(text);
                                 Matcher m=p.matcher(text);
                                 day[i-1]=r[0];
+                                if(day[i-1].contains("Fir"))
+                                    day[i-1]="Fri";
                                 start_week[i-1]=Integer.parseInt(r[1]);
                                 end_week[i-1]=Integer.parseInt(r[2]);
                                 start_time[i-1]=Integer.parseInt(r[6]);
@@ -267,14 +269,13 @@ public class load extends AppCompatActivity {
                                 {//目前是这样，整合之后我觉得可以把所有需要的地点都用数据库存储？目前还没有用数据库存地点
                                     location[i-1]=r[9]+r[10]+"-"+r[11];
                                     if( (r[9]+r[10]).equals("3区附3")){
-                                        Latitude[i-1]=114.36003731951895;//附三的坐标
-                                        Longtitude[i-1]=30.52670197941972;
+                                        Latitude[i-1]=30.52772852708478 ;//附三的坐标
+                                        Longtitude[i-1]=114.35923204909842;
                                     }
-
                                 }
                                 else{
-                                    Latitude[i-1]=114.35745598430768;//计院的坐标
-                                    Longtitude[i-1]=30.53842642740077;
+                                    Latitude[i-1]=30.53842642740077;//计院的坐标
+                                    Longtitude[i-1]=114.35745598430768;
                                 }
                         }
                     }
@@ -290,9 +291,8 @@ public class load extends AppCompatActivity {
                 //sqLiteDatabase.delete("courses_info",null,null);
                 sqLiteDatabase.execSQL("DELETE FROM courses_info");
                 for (int t = 0; t < trs.size() - 1; t++) {
-                    System.out.print(Cnos[t] + " " + Cname[t] + " " + type[t] + " " + dept[t] + " " + teacher[t] + " " + sco[t] + " " + length[t] + " " +start_time[t]+" "+end_time[t]+" "+ location[t] + Latitude[t]+Longtitude[t]+"\n");
-                   if(day[t]=="Fir")
-                       day[t]="Fri";
+                    System.out.print(Cnos[t] + " " + Cname[t] + " " + type[t] + " " + dept[t] + " " + teacher[t] + " " + sco[t] + " " + length[t] + " " +start_time[t]+" "+end_time[t]+" "+ location[t] + Latitude[t]+Longtitude[t]+" "+day[t]+"\n");
+
                     values.put("Cno", Cnos[t]);
                     values.put("Cname", Cname[t]);
                     values.put("Type", type[t]);
