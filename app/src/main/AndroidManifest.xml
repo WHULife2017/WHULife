@@ -1,40 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.WhuLife">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
+        android:icon="@mipmap/appicon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        android:icon="@mipmap/appicon">
-        <activity android:name="com.example.WhuLife.subscription.SubscriptionMainActivity"></activity>
-        <activity android:name="com.example.WhuLife.subscription.PreferenceActivity"></activity>
-        <activity android:name="com.example.WhuLife.subscription.PushNewsActivity"></activity>
-        <activity android:name="com.example.WhuLife.subscription.NoticeActivity"></activity>
-        <activity android:name="com.example.WhuLife.subscription.GetNewsActivity"></activity>
-        <activity android:name=".course.AddCourseActivity"></activity>
-        <activity android:name=".course.DeleteCourseActivity"></activity>
-        <activity android:name=".course.EditTextActivity"></activity>
-        <activity android:name=".course.MainActivity"></activity>
-        <activity android:name=".course.load"></activity>
-        <activity android:name=".course.OurLocation"></activity>
-        <activity android:name=".course.RingActivity"></activity>
-        <activity android:name=".location.setLocation"></activity>
-        <activity android:name=".location.Locate"></activity>
-        <activity android:name=".location.LocationMainActivity"></activity>
-        <activity android:name=".location.PackageActivity"></activity>
-
+        android:usesCleartextTraffic="true">
+        <activity android:name=".noticelist.NoticelistMainActivity"></activity>
+        <activity android:name=".subscription.SubscriptionMainActivity" />
+        <activity android:name=".subscription.PreferenceActivity" />
+        <activity android:name=".subscription.PushNewsActivity" />
+        <activity android:name=".subscription.NoticeActivity" />
+        <activity android:name=".subscription.GetNewsActivity" />
+        <activity android:name=".course.AddCourseActivity" />
+        <activity android:name=".course.DeleteCourseActivity" />
+        <activity android:name=".course.EditTextActivity" />
+        <activity android:name=".course.MainActivity" />
+        <activity android:name=".course.load" />
+        <activity android:name=".course.OurLocation" />
+        <activity android:name=".course.RingActivity" />
+        <activity android:name=".location.setLocation" />
+        <activity android:name=".location.Locate" />
+        <activity android:name=".location.LocationMainActivity" />
+        <activity android:name=".location.PackageActivity" />
         <activity
-            android:name="com.example.WhuLife.ui.Login.LoginActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity
-            android:name="com.example.WhuLife.MainActivity"
+            android:name=".ui.Login.LoginActivity"
             android:label="@string/app_name"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" />
         <activity android:name=".ui.welcome.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

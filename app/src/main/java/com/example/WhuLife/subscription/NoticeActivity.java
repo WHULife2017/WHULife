@@ -54,6 +54,13 @@ public class NoticeActivity extends AppCompatActivity {
             }
         }).start();
     }
+
+    /**
+     * 调用notification显示的时候也需要使用
+     * 故直接定义成静态的
+     * @param response
+     * @return
+     */
     private List<MMessage> parseJSON(final String response) {
         Gson gson = new Gson();
         List<MMessage> msgList = gson.fromJson(response,new TypeToken<List<MMessage>>(){}.getType());
