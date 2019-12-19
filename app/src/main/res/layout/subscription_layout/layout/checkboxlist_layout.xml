@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp">
 
     <LinearLayout
         android:id="@+id/layout_checkboxForOne"
         android:layout_width="match_parent"
         android:layout_height="90dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@color/touming">
         <TextView
             android:id="@+id/txtview_checkboxlist_num"
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:textSize="30dp"
             android:gravity="center"
+            android:textColor="#FFFFFF"
             android:text="1"/>
         <CheckBox
             android:id="@+id/checkbox_checkboxlist_check"
@@ -32,6 +36,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:textSize="20dp"
+                android:textColor="#FFFFFF"
                 android:text="ssssssss"/>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -44,6 +49,7 @@
                     android:layout_weight="1.0"
                     android:gravity="center"
                     android:textSize="15dp"
+                    android:textColor="#FFFFFF"
                     android:text="2019.11.17"/>
                 <TextView
                     android:id="@+id/textview_place"
@@ -52,6 +58,7 @@
                     android:layout_weight="1.0"
                     android:gravity="center"
                     android:textSize="15dp"
+                    android:textColor="#FFFFFF"
                     android:text="计算机学院A403"/>
             </LinearLayout>
         </LinearLayout>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:padding="15dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
@@ -11,17 +13,20 @@
             android:layout_height="match_parent"
             android:text="序号"
             android:textSize="15dp"
+            android:textColor="#FFFFFF"
             android:gravity="center"/>
         <TextView
             android:layout_width="40dp"
             android:layout_height="match_parent"
             android:text="选择"
             android:textSize="15dp"
+            android:textColor="#FFFFFF"
             android:gravity="center"/>
         <TextView
             android:layout_width="200dp"
             android:layout_height="match_parent"
             android:textSize="15dp"
+            android:textColor="#FFFFFF"
             android:text="通知事件（点击看详情）"
             android:gravity="center"/>
         <TextView
@@ -29,6 +34,7 @@
             android:layout_height="match_parent"
             android:text="时间地点"
             android:textSize="15dp"
+            android:textColor="#FFFFFF"
             android:gravity="center"/>
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
@@ -46,18 +52,23 @@
             android:layout_width="0dp"
             android:layout_weight="1.0"
             android:layout_height="match_parent"
+            android:background="@drawable/btn_bg_login"
+            android:layout_marginRight="10dp"
             android:text="重置"/>
         <Button
             android:id="@+id/button_NoticeSelectAll"
             android:layout_width="0dp"
             android:layout_weight="1.0"
             android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bg_login"
             android:text="全选"/>
         <Button
             android:id="@+id/button_NoticeCommit"
             android:layout_width="0dp"
             android:layout_weight="1.0"
             android:layout_height="match_parent"
+            android:background="@drawable/btn_bg_login"
             android:text="提交"/>
     </LinearLayout>
 

@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".noticelist.NoticelistMainActivity">
+    tools:context=".noticelist.NoticelistMainActivity"
+    android:gravity="bottom|right"
+    android:background="@mipmap/bg_login"
+    android:paddingBottom="80dp"
+    android:paddingRight="20dp">
 
     <TextView
         android:id="@+id/text_notifications"
@@ -21,9 +25,10 @@
         app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/button_msglist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="查看你已填加的备忘录列表"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="NOTES"
         android:textSize="50px"
+        android:background="@mipmap/notification"
         />
 </LinearLayout>

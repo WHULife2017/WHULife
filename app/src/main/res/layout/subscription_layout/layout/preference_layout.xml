@@ -1,78 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:padding="10dp">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="请先告诉我你所感兴趣的方面"
+        android:text="InterestS"
         android:gravity="center"
-        android:textSize="50px"/>
+        android:layout_marginBottom="15dp"
+        android:textColor="#ffffff"
+        android:textSize="60px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <CheckBox
         android:id="@+id/checkbox_lecture"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="学术报告"
-        android:textSize="50px" />
+        android:textSize="60px" />
     <CheckBox
         android:id="@+id/checkbox_sports"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="体育赛事"
+        android:textSize="60px"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="体育赛事"
-        android:textSize="50px"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
     <CheckBox
         android:id="@+id/checkbox_movie"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="梅操电影"
-        android:textSize="50px" />
+        android:textSize="60px"/>
     <CheckBox
         android:id="@+id/checkbox_supermakert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="自强活动"
+        android:textSize="60px"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="自强活动"
-        android:textSize="50px"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
     <CheckBox
         android:id="@+id/checkbox_whunews"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="武大新闻"
-        android:textSize="50px"/>
+        android:textSize="60px"/>
     <CheckBox
         android:id="@+id/checkbox_holiday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.45"
+        android:text="假期信息"
+        android:textSize="60px"/>
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="假期信息"
-        android:textSize="50px"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
     <CheckBox
         android:id="@+id/checkbox_library"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="图书馆"
-        android:textSize="50px"/>
+        android:textSize="60px"/>
     <CheckBox
         android:id="@+id/checkbox_bulletin"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0."
         android:text="名单公示信息"
-        android:textSize="50px"/>
-
+        android:textSize="60px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="15dp">
     <Button
         android:id="@+id/button_selectall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_login"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:text="全部选择"
         android:textSize="50px"/>
     <Button
         android:id="@+id/button_reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_login"
+        android:layout_marginBottom="10dp"
         android:text="全部重置"
         android:textSize="50px"/>
     <Button
         android:id="@+id/button_commit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_login"
         android:text="提交喜好"
         android:textSize="50px"/>
+    </LinearLayout>
 </LinearLayout>

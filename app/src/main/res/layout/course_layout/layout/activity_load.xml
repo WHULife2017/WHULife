@@ -3,45 +3,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@mipmap/bg_login">
 
-
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/user">
+    </ImageButton>
 
     <EditText
         android:id="@+id/id_ed"
-        android:layout_width="532dp"
-        android:layout_height="68dp"
-        android:hint="学号" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="学号"/>
 
     <EditText
         android:id="@+id/pwd_ed"
-        android:layout_width="537dp"
-        android:layout_height="73dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="textPassword"
         android:hint="密码" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <EditText
         android:id="@+id/randcode"
         android:hint="验证码"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:maxLength="4"/>
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"/>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
     <Button
         android:id="@+id/btn_changeImg"
-        android:layout_width="wrap_content"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:onClick="onclick"
-        android:text="验证码" />
-
+        android:layout_marginRight="15dp"
+        android:text="验证码"
+        android:background="@drawable/btn_bg_course"/>
     <Button
         android:id="@+id/tijiao"
-        android:layout_width="wrap_content"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
         android:onClick="onclick"
+        android:background="@drawable/btn_bg_course"
         android:text="登录" />
+    </LinearLayout>
 
 
 

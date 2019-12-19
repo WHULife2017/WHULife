@@ -3,12 +3,12 @@
 
     <item
         android:id="@+id/navigation_coursenotice"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@mipmap/coursenotice"
         android:title="@string/title_coursenotice" />
 
     <item
         android:id="@+id/navigation_location"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@mipmap/bags"
         android:title="@string/title_location" />
 
     <item
@@ -17,6 +17,6 @@
         android:title="@string/title_notifications" />
     <item
         android:id="@+id/navigation_subscription"
-        android:icon="@mipmap/map"
+        android:icon="@mipmap/subscription"
         android:title="@string/title_subscription" />
 </menu>

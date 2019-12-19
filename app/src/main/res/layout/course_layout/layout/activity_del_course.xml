@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_login"
+    android:padding="30dp">
+
+    <ImageButton
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:background="@mipmap/coursetable"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center">
+    </ImageButton>
+
     <EditText
         android:id="@+id/cno"
-        android:layout_width="532dp"
-        android:layout_height="68dp"
-        android:hint="课程号" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="课程号">
+
+    </EditText>
     <EditText
         android:id="@+id/cname"
-        android:layout_width="532dp"
-        android:layout_height="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:hint="课程名" />
     <Button
         android:id="@+id/commit"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_bg_course"
         android:onClick="onclick"
         android:text="删除" />
 

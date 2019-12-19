@@ -21,13 +21,19 @@
             andriod:hint="学工号"
             andriod:maxLines="1"
             andriod:textSize="20sp" />
+        <LinearLayout
+            andriod:layout_width="match_parent"
+            andriod:layout_height="wrap_content">
         <EditText
             andriod:layout_width="match_parent"
             andriod:layout_height="wrap_content"
             andriod:hint="密码"
             andriod:maxLines="1"
             andriod:textSize="20sp"
+            andriod:inputType="textPassword"
             andriod:layout_marginBottom="15dp"/>
+
+        </LinearLayout>
         <Button
             andriod:layout_width="150dp"
             andriod:layout_height="wrap_content"
