@@ -44,7 +44,7 @@ public class NoticeActivity extends AppCompatActivity {
             public void run() {
                 try{
                     OkHttpClient client = new OkHttpClient();
-                    Request request = new Request.Builder().url("http://111.230.233.136:8888/s").build();
+                    Request request = new Request.Builder().url("http://111.230.233.136:8888/api/msg/").build();
                     Response response = client.newCall(request).execute();
                     String res = response.body().string();
                     showResponse(res);
@@ -54,6 +54,13 @@ public class NoticeActivity extends AppCompatActivity {
             }
         }).start();
     }
+
+    /**
+     * 调用notification显示的时候也需要使用
+     * 故直接定义成静态的
+     * @param response
+     * @return
+     */
     private List<MMessage> parseJSON(final String response) {
         Gson gson = new Gson();
         List<MMessage> msgList = gson.fromJson(response,new TypeToken<List<MMessage>>(){}.getType());

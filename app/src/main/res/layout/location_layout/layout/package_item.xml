@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_margin="15dp"
-        android:background="@color/login_other_color"
+        android:background="@color/antiquewhite"
         style="?android:attr/borderlessButtonStyle"/>
 
     <LinearLayout
