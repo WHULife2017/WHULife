@@ -79,6 +79,8 @@ public class PreferenceActivity extends AppCompatActivity {
             Toast.makeText(this,"你已经设置好了你的喜好，快来看看吧",Toast.LENGTH_SHORT).show();
             Intent intent=new Intent(this, GetNewsActivity.class);
             startActivity(intent);
+            /*确保后面返回不会返回这个界面了直接退出到最开始的界面*/
+            this.finish();
         }/*否则一个选择框都没有选 我们弹出一个消息窗让其重选或退出*/
         else {
             AlertDialog.Builder dialog=new AlertDialog.Builder(PreferenceActivity.this);

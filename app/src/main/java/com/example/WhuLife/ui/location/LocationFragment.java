@@ -6,19 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import com.amap.api.location.AMapLocationClient;
 import com.example.WhuLife.R;
-import com.example.WhuLife.location.Locate;
-import com.example.WhuLife.location.LocationMainActivity;
-import com.example.WhuLife.location.PacakgeActivity;
+import com.example.WhuLife.location.PackageActivity;
 
 public class LocationFragment extends Fragment {
 
@@ -47,7 +41,7 @@ public class LocationFragment extends Fragment {
             public void onClick(View v) {
                 switch (v.getId()){
                     case R.id.start:
-                        Intent intent1 = new Intent(getContext(), PacakgeActivity.class);
+                        Intent intent1 = new Intent(getContext(), PackageActivity.class);
                         startActivity(intent1);
                         break;
                 }

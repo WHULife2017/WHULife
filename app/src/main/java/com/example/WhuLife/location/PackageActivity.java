@@ -20,11 +20,10 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PacakgeActivity extends AppCompatActivity implements View.OnClickListener {
+public class PackageActivity extends AppCompatActivity implements View.OnClickListener {
 
     public Locate myLocation;
     public AMapLocationClient mapLocationClient = null;
-    Location goal_l = new Location(0,0,"null");
 
     private LocationDB dbHelper;
     private SQLiteDatabase db;
@@ -107,25 +106,23 @@ public class PacakgeActivity extends AppCompatActivity implements View.OnClickLi
                     double latitude = data.getDoubleExtra("latitude", 0);
                     double longtitude = data.getDoubleExtra("longtitude", 0);
                     String packageId = data.getStringExtra("packageId");
+                    if(fetchLocation!=""&&company!=""&&packageId!=""){
+                        APackage add_one = new APackage(packageId, fetchLocation, "null", company);
+                        adapter.notifyDataSetChanged();
+                        packageList.add(add_one);
 
-                    APackage add_one = new APackage(packageId, fetchLocation, "null", company);
-                    adapter.notifyDataSetChanged();
-                    packageList.add(add_one);
-
-                    //data
-                    values.put("id", packageId);
-                    values.put("package_location", fetchLocation);
-                    values.put("package_company", company);
-                    values.put("latitude", latitude);
-                    values.put("longtitude", longtitude);
-                    values.put("inform_time", "null");
-                    //insert
-                    db.insert("package", null, values);
-                    values.clear();
-                    values.put("latitude", latitude);
-                    values.put("longtitude", longtitude);
-                    db.insert("target", null, values);
-                    values.clear();
+                        //data
+                        values.put("id", packageId);
+                        values.put("package_location", fetchLocation);
+                        values.put("package_company", company);
+                        values.put("latitude", latitude);
+                        values.put("longtitude", longtitude);
+                        values.put("inform_time", "null");
+                        //insert
+                        db.insert("package", null, values);
+                        values.clear();
+                        myLocation.setLocation(latitude, longtitude);
+                    }
                 }
                 break;
             default:

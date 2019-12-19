@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:descendantFocusability="afterDescendants">
+    android:descendantFocusability="afterDescendants"
+    android:background="@mipmap/bg_login">
 
     <!--
 
@@ -32,9 +33,12 @@
     -->
     <Button
         android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="package"/>
+        android:layout_width="100dp"
+        android:layout_height="125dp"
+        android:background="@mipmap/packages"
+        android:layout_gravity="center"
+        android:text="package"
+        android:textColor="#FFFFFF"/>
 </FrameLayout>
 
 
