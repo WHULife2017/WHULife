@@ -34,7 +34,7 @@ import java.util.List;
 import static com.amap.api.location.CoordinateConverter.calculateLineDistance;
 
 public class Locate extends AppCompatActivity {
-    public static final double ACCURACY_LIMIT = 30;
+    public static final double ACCURACY_LIMIT = 20;
     public static final double DISTANCE_LIMIT = 50;
     //the location you are
     public double Latitude;
@@ -127,7 +127,7 @@ public class Locate extends AppCompatActivity {
                             t_longtitude = cursor.getDouble(cursor.getColumnIndex("longtitude"));
                             DPoint t_Point = new DPoint(t_latitude, t_longtitude);
                             distance = calculateLineDistance(t_Point, myPoint);
-                            if(isNear() == false){
+                            if(isNear() == true){
                                 Toast.makeText(context, "locate "+t_longtitude,Toast.LENGTH_SHORT).show();
 //                                Intent intent = new Intent("com.example.WhuLife.LOCATIONMSG");
 //                                sendBroadcast(intent);
@@ -198,13 +198,13 @@ public class Locate extends AppCompatActivity {
     public static boolean isNear(){
         if(accuracy <= ACCURACY_LIMIT){
             if(distance <= DISTANCE_LIMIT){
-                //Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "Near!", Toast.LENGTH_SHORT).show();
                 return true;
             } else {
-                //Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "too far!", Toast.LENGTH_SHORT).show();
             }
         } else {
-            //Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "not accurate!", Toast.LENGTH_SHORT).show();
         }
         return false;
     }
