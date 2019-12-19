@@ -8,6 +8,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,6 +43,13 @@ public class PushNewsActivity extends AppCompatActivity {
                 progressBar = findViewById(R.id.process_bar);
                 progressBar.setVisibility(View.VISIBLE);
                 Toast.makeText(PushNewsActivity.this, "加载中...", Toast.LENGTH_SHORT).show();
+                Button button = (Button) findViewById(R.id.button_news_test);
+                button.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getBaseContext(), "已将该文章加入您的收藏啦！", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
