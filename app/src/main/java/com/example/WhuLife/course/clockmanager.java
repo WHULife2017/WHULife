@@ -122,8 +122,9 @@ public class clockmanager {
 
     //取消闹钟
     public void cancelAlarm(int id) {
+        am = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
         Intent intent=new Intent(context, AlarmReceiver.class);
-        PendingIntent pi = PendingIntent.getBroadcast(context, id , intent, 0);
+        PendingIntent pi = PendingIntent.getBroadcast(context, id , intent, PendingIntent.FLAG_CANCEL_CURRENT);
         am.cancel(pi);//取消闹钟
         Toast.makeText(context, "取消成功", Toast.LENGTH_LONG).show();
     }
