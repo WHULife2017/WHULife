@@ -18,6 +18,7 @@
         android:id="@+id/pwd_ed"
         android:layout_width="537dp"
         android:layout_height="73dp"
+        android:inputType="textPassword"
         android:hint="密码" />
     <EditText
         android:id="@+id/randcode"
