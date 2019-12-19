@@ -117,14 +117,17 @@ public class setLocation extends AppCompatActivity implements View.OnClickListen
     }
 
     protected void setInfo(){
-        Intent intent = new Intent();
-        intent.putExtra("location", goal_location.getfetchLocation());
-        intent.putExtra("longtitude", goal_location.getLongitude());
-        intent.putExtra("latitude", goal_location.getLatitude());
-        intent.putExtra("company", goal_location.getCompany());
-        intent.putExtra("packageId", editPackageId.getText().toString());
-        setResult(RESULT_OK, intent);
-        finish();
+        if(goal_location.getLatitude() != 0){
+            Intent intent = new Intent();
+            intent.putExtra("location", goal_location.getfetchLocation());
+            intent.putExtra("longtitude", goal_location.getLongitude());
+            intent.putExtra("latitude", goal_location.getLatitude());
+            intent.putExtra("company", goal_location.getCompany());
+            intent.putExtra("packageId", editPackageId.getText().toString());
+            setResult(RESULT_OK, intent);
+            finish();
+        }
+
     }
 
     @Override

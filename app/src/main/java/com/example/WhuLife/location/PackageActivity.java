@@ -2,8 +2,11 @@ package com.example.WhuLife.location;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -34,6 +37,9 @@ public class PackageActivity extends AppCompatActivity implements View.OnClickLi
 
     public FloatingActionButton fab;
 
+    private IntentFilter intentFilter;
+    private LocateBroadcastReceiver locateBroadcastReceiver;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +60,12 @@ public class PackageActivity extends AppCompatActivity implements View.OnClickLi
         mapLocationClient = new AMapLocationClient((this.getApplicationContext()));
         myLocation.initLocation(mapLocationClient);
         myLocation.startLocation();
+
+        intentFilter = new IntentFilter();
+        intentFilter.addAction("com.example.WhuLife.LOCATIONMSG");
+        locateBroadcastReceiver = new LocateBroadcastReceiver();
+        registerReceiver(locateBroadcastReceiver, intentFilter);
+
     }
 
     private void initPackage(){
@@ -81,7 +93,8 @@ public class PackageActivity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        myLocation.destroyLocation();
+        //myLocation.destroyLocation();
+        unregisterReceiver(locateBroadcastReceiver);
     }
 
     @Override
@@ -106,23 +119,21 @@ public class PackageActivity extends AppCompatActivity implements View.OnClickLi
                     double latitude = data.getDoubleExtra("latitude", 0);
                     double longtitude = data.getDoubleExtra("longtitude", 0);
                     String packageId = data.getStringExtra("packageId");
-                    if(fetchLocation!=""&&company!=""&&packageId!=""){
-                        APackage add_one = new APackage(packageId, fetchLocation, "null", company);
-                        adapter.notifyDataSetChanged();
-                        packageList.add(add_one);
+                    APackage add_one = new APackage(packageId, fetchLocation, "null", company);
+                    adapter.notifyDataSetChanged();
+                    packageList.add(add_one);
 
-                        //data
-                        values.put("id", packageId);
-                        values.put("package_location", fetchLocation);
-                        values.put("package_company", company);
-                        values.put("latitude", latitude);
-                        values.put("longtitude", longtitude);
-                        values.put("inform_time", "null");
-                        //insert
-                        db.insert("package", null, values);
-                        values.clear();
-                        myLocation.setLocation(latitude, longtitude);
-                    }
+                    //data
+                    values.put("id", packageId);
+                    values.put("package_location", fetchLocation);
+                    values.put("package_company", company);
+                    values.put("latitude", latitude);
+                    values.put("longtitude", longtitude);
+                    values.put("inform_time", "null");
+                    //insert
+                    db.insert("package", null, values);
+                    values.clear();
+                    myLocation.setLocation(latitude, longtitude);
                 }
                 break;
             default:

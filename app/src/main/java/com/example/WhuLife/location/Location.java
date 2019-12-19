@@ -8,7 +8,7 @@ import java.io.Serializable;
  * Created by liyujiang on 2017/9/4 15:53.
  */
 public class Location implements Serializable {
-    private double latitude,longitude;
+    private double latitude=0,longitude=0;
     private String company;
     private String fetchLocation;
 

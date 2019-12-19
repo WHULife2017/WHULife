@@ -1,19 +1,32 @@
 package com.example.WhuLife.location;
 
+import android.annotation.TargetApi;
+import android.app.Activity;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.util.Log;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
 import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.location.DPoint;
+import com.example.WhuLife.R;
+
 
 
 import java.util.List;
@@ -40,6 +53,9 @@ public class Locate extends AppCompatActivity {
     //for location
     private AMapLocationClient mapLocationClient = null;
     private AMapLocationClientOption mapLocationClientOption = null;
+
+    private NotificationManager mManager;
+
 
     public Locate(Context context, SQLiteDatabase db){
         this.context = context;
@@ -113,7 +129,10 @@ public class Locate extends AppCompatActivity {
                             distance = calculateLineDistance(t_Point, myPoint);
                             if(isNear() == false){
                                 Toast.makeText(context, "locate "+t_longtitude,Toast.LENGTH_SHORT).show();
-                            }
+//                                Intent intent = new Intent("com.example.WhuLife.LOCATIONMSG");
+//                                sendBroadcast(intent);
+                                createNotificationChannel(context, 1);
+                               }
                         }while (cursor.moveToNext());
                     }
                     cursor.close();
@@ -123,6 +142,47 @@ public class Locate extends AppCompatActivity {
             }
         }
     };
+
+    public void createNotificationChannel(Context context, int notifactionId) {
+        NotificationManager notificationManager =
+                (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+        Notification.Builder notification = null;
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            String channelId = String.valueOf(notifactionId);
+            CharSequence channelName = "channelName";
+            String channelDescription = "channelDescription";
+            int channelImportance = NotificationManager.IMPORTANCE_DEFAULT;
+
+            NotificationChannel notificationChannel = new NotificationChannel(channelId, channelName, channelImportance);
+            // 设置描述 最长30字符
+            notificationChannel.setDescription(channelDescription);
+            // 该渠道的通知是否使用震动
+            notificationChannel.enableVibration(true);
+            // 设置显示模式
+            notificationChannel.setLockscreenVisibility(NotificationCompat.VISIBILITY_SECRET);
+            //notificationChannel.setSound(Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.order_tishi), null);
+
+
+            notificationManager.createNotificationChannel(notificationChannel);
+            notification = new Notification.Builder(context);
+            notification.setChannelId(channelId);
+            notification.setContentTitle("您有快递在附近！");
+            notification.setContentText(" ");
+            //notification.setSound(Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.order_tishi));
+            notification.setSmallIcon(R.mipmap.ic_launcher_round).build();
+
+        } else {
+            notification = new Notification.Builder(context);
+            notification.setAutoCancel(true)
+                    .setContentText("自定义推送声音111")
+                    .setContentTitle("111")
+                    .setSmallIcon(R.mipmap.appicon)
+                    .setDefaults(Notification.DEFAULT_ALL);
+            //notification.setSound(Uri.parse("android.resource://" + context.getPackageName() + "/" + R.raw.order_tishi));
+        }
+        notificationManager.notify(1024, notification.getNotification());
+    }
 
     //set target location
     public void setLocation(double latitude, double longtitude){
