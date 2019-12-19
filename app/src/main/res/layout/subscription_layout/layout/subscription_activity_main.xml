@@ -9,6 +9,20 @@
     android:background="@mipmap/bg_login"
     android:padding="15dp">
 
+<<<<<<< HEAD
+=======
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="享受属于你的推送板块吧！"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> origin/master
     <Button
         android:id="@+id/button_preference"
         android:layout_width="match_parent"
