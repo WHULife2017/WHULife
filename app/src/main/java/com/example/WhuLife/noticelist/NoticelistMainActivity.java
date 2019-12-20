@@ -153,10 +153,14 @@ public class NoticelistMainActivity extends AppCompatActivity {
                             }
                             else{
                                 SharedPreferences.Editor editor=getSharedPreferences("notice",MODE_PRIVATE).edit();
-                                editor.putString("status","edited");
                                 int i=0;//前面使用了位置按序标号存储勾选状态 这里需要存储真正的ID号码
-                                for(Check check:checkList)
-                                    editor.putBoolean(check.getNum(),!adapter.map.get(i++));
+                                for(Check check:checkList){
+                                    if(adapter.map.get(i)==true)
+                                        editor.putBoolean(check.getNum(),!adapter.map.get(i++));
+                                    else
+                                        i++;
+                                }
+
                                 editor.apply();
                                 Toast.makeText(NoticelistMainActivity.this,"选择的备忘录已经为您移除",Toast.LENGTH_SHORT).show();
                                 Intent intent=new Intent(getBaseContext(),NoticelistMainActivity.class);

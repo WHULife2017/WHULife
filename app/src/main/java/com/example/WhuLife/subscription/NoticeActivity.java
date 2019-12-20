@@ -125,13 +125,30 @@ public class NoticeActivity extends AppCompatActivity {
                             dialog.show();
                         }
                         else{
-                            SharedPreferences.Editor editor=getSharedPreferences("notice",MODE_PRIVATE).edit();
-                            editor.putString("status","edited");
-                            int i=0;//前面使用了位置按序标号存储勾选状态 这里需要存储真正的ID号码
-                            for(Check check:checkList)
-                                editor.putBoolean(check.getNum(),adapter.map.get(i++));
-                            editor.apply();
-                            Toast.makeText(NoticeActivity.this,"备忘录已经为您设置完成",Toast.LENGTH_SHORT).show();
+                            SharedPreferences isempty=getSharedPreferences("notice",MODE_PRIVATE);
+                            if(isempty.getString("status","None").equals("edited")){
+                                SharedPreferences.Editor editor=getSharedPreferences("notice",MODE_PRIVATE).edit();
+                                int i=0;//前面使用了位置按序标号存储勾选状态 这里需要存储真正的ID号码
+                                for(Check check:checkList){
+                                    if(adapter.map.get(i)==true)
+                                        editor.putBoolean(check.getNum(),adapter.map.get(i++));
+                                    else
+                                        i++;
+                                }
+                                editor.apply();
+                                Toast.makeText(NoticeActivity.this,"新加备忘录已经为您添加完成",Toast.LENGTH_SHORT).show();
+                                finish();
+                            }else{
+                                SharedPreferences.Editor editor=getSharedPreferences("notice",MODE_PRIVATE).edit();
+                                editor.putString("status","edited");
+                                int i=0;//前面使用了位置按序标号存储勾选状态 这里需要存储真正的ID号码
+                                for(Check check:checkList)
+                                    editor.putBoolean(check.getNum(),adapter.map.get(i++));
+                                editor.apply();
+                                Toast.makeText(NoticeActivity.this,"备忘录已经为您设置完成",Toast.LENGTH_SHORT).show();
+                                finish();
+                            }
+
                         }
 
                     }
