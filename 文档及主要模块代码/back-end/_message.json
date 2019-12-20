@@ -1,0 +1,137 @@
+[
+    {
+        "mid": 1000,
+        "time": "2019-12-05 18:00",
+        "location": "信息学部三教",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "数据挖掘讲座",
+        "info": "2019年10月18日学术报告（徐敏 副教授 澳大利亚悉尼科技大学）"
+    },
+    {
+        "mid": 1001,
+        "time": "2019-12-17 09:00",
+        "location": "振华楼文学院501",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "发声态研究的来龙去脉",
+        "info": "发声态研究的来龙去脉（朱晓龙，香港科技大学教授）"
+    },
+    {
+        "mid": 1002,
+        "time": "2019-12-17 10:00",
+        "location": "信息管理学院205会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "利用大规模数字踪迹增强智能互联社区的决策",
+        "info": "利用大规模数字踪迹增强智能互联社区的决策（朱晓龙，香港科技大学教授）"
+    },
+    {
+        "mid": 1003,
+        "time": "2019-12-17 09:00",
+        "location": "电子信息学院303",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "磁重联扩散区和偶极化锋面处的哨声波观测研究",
+        "info": "磁重联扩散区和偶极化锋面处的哨声波观测研究（符慧山，北京航天航空大学教授）"
+    },
+    {
+        "mid": 1004,
+        "time": "2019-12-17 15:00",
+        "location": "数学院二楼报告厅",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "Simulated Distribution Based Learning for Non-regular and Regular Statistical Inferences",
+        "info": "Simulated Distribution Based Learning for Non-regular and Regular Statistical Inferences（张正军，美国威斯康辛大学教授）"
+    },
+    {
+        "mid": 1005,
+        "time": "2019-12-17 16:00",
+        "location": "数学院二楼报告厅",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "Random Survival Forest for Personalized Medicine ",
+        "info": "Random Survival Forest for Personalized Medicine （朱若青，美国伊利诺伊大学教授）"
+    },
+    {
+        "mid": 1006,
+        "time": "2019-12-18 09:00",
+        "location": "振华楼文学院501",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "声调研究的来龙去脉",
+        "info": "声调研究的来龙去脉（朱晓龙，香港科技大学教授）"
+    },
+    {
+        "mid": 1007,
+        "time": "2019-12-7 19:00",
+        "location": "总馆艺术欣赏厅（A2多媒体阅览室内）",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "莎士比亚两千年（戏剧之门",
+        "info": "文化原型与跨文化演绎--莎士比亚两千年 王允含"
+    },
+    {
+        "mid": 1008,
+        "time": "2019-11-7 14:00",
+        "location": "计算机学院B403会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "生成式对抗网络研究与应用",
+        "info": "生成式对抗网络在图像标注、阴影检测与消除以及数字取证的研究与应用 龙成江"
+    },
+    {
+        "mid": 1009,
+        "time": "2019-12-23 10:00",
+        "location": "计算机学院B403会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "AI Research and Education in the UAE",
+        "info": "AI Research and Education in the UAE 邵岭"
+    },
+    {
+        "mid": 10010,
+        "time": "2019-12-4 18:30",
+        "location": "武汉大学图书馆工学分馆一楼服务大厅",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "建筑摄影 · 理性与感性的融合",
+        "info": "第十九届剑客沙龙 建筑摄影"
+    },
+    {
+        "mid": 10011,
+        "time": "2019-12-18 9:30",
+        "location": "计算机学院B403会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "Complex Data Learning for Knowledge Discovery",
+        "info": "Complex Data Learning for Knowledge Discovery 张仲非"
+    },
+    {
+        "mid": 10012,
+        "time": "2019-12-13 9:30",
+        "location": "计算机学院B403会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "微服务架构：企业实践与技术挑战",
+        "info": "微服务架构：企业实践与技术挑战 彭鑫"
+    },
+    {
+        "mid": 10013,
+        "time": "2019-09-29 10:00",
+        "location": "计算机学院B404会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "Industrializing AI: An Ubiquitous Computing Approach",
+        "info": "Industrializing AI: An Ubiquitous Computing Approach 熊昊一"
+    },
+    {
+        "mid": 10014,
+        "time": "2019-09-27 15:00",
+        "location": "计算机学院B405会议室",
+        "longitude": 0,
+        "latitude": 0,
+        "shortInfo": "连接社会多媒体大数据",
+        "info": "连接社会多媒体大数据 徐常胜"
+    }
+]
