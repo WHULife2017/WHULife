@@ -1,0 +1,440 @@
+{
+    "academic": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1197",
+            "title": "2019年11月7日学术报告（龙成江 研究员，Kitware Inc.）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1187",
+            "title": "2019年10月18日学术报告（徐敏 副教授 澳大利亚悉尼科技大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1178",
+            "title": "2019年9月29日学术报告（熊昊一 资深研究员，百度研究院）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1177",
+            "title": "2019年9月28日学术报告（秦建斌 研究科学家，深圳计算科学研究院）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1174",
+            "title": "2019年9月27日学术报告（张成奇 教授，澳大利亚悉尼科技大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1173",
+            "title": "2019年9月27日学术报告（徐常胜 教授，中国科学院自动化研究所）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1172",
+            "title": "2019年9月27日学术报告（潘志庚 教授，杭州师范大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1171",
+            "title": "2019年9月25日学术报告（高云君 教授，浙江大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1163",
+            "title": "2019年9月23日学术报告（Shin'ichi Konomi 教授, 日本九州大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1159",
+            "title": "2019年9月22日学术报告（Imre Horváth教授, 荷兰代尔夫特理工大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1153",
+            "title": "2019年9月17日学术报告二则（马强 副教授、曹洋 博士，日本京都大学）"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1126",
+            "title": "2019年7月23日学术报告（王松 教授，美国南卡罗莱纳大学 ）"
+        }
+    ],
+    "news": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1212",
+            "title": "我院在武汉大学第十一届教职工健身运动会中喜获佳绩"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1210",
+            "title": "79级计科校友重聚母院，共叙情谊"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1208",
+            "title": "武汉大学人工智能研究院成立大会暨人工智能国际学术研讨会成功举办"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1201",
+            "title": "学院召开全院大会宣布黄传河任职"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1199",
+            "title": "第三届中国计算机实践教育学术会议暨第十二届全国高等学校计算机实践教学论坛（CPEC2019）在武汉成功举办"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1196",
+            "title": "计算机学院2019年教职工珞珈徒步行活动圆满举行"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1194",
+            "title": "计算机学院学子在第四届中国高校移动应用创新赛中获佳绩"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1189",
+            "title": "我院与芯来科技签约合作共建RISC-V“三创”教育联合实验室"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1186",
+            "title": "我院开展“不忘初心、牢记使命”主题教育专题党课党员集中学习"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1182",
+            "title": "我院何克清教授获颁庆祝中华人民共和国成立70周年纪念章"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1179",
+            "title": "学院办公室党支部开展“不忘初心 牢记使命”主题教育学习活动"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1167",
+            "title": "学院召开大会宣布学院干部任免"
+        }
+    ],
+    "notification": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1209",
+            "title": "关于以民主推荐方式选拔计算机学院团委书记 （内设机构主任级）的工作通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1203",
+            "title": "计算机学院关于评选2018-2019学年度优秀研究生、优秀研究生标兵的通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1193",
+            "title": "计算机学院2019-2020学年研究生优秀学业奖学金评定通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1184",
+            "title": "计算机学院2019年研究生国家奖学金评定通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1181",
+            "title": "计算机学院2019年下半年在职工程硕士研究生论文答辩安排"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1175",
+            "title": "计算机学院2020年接收优秀应届本科毕业生免试攻读研究生工作实施细则"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1160",
+            "title": "计算机学院关于开展2018-2019学年度本科学生素质综合测评工作的通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1150",
+            "title": "计算机学院2019年中秋节学生放假通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1143",
+            "title": "关于推荐2020届优秀本科毕业生免试攻读硕士学位研究生工作实施细则"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1142",
+            "title": "关于做好2020年推荐优秀应届本科毕业生免试攻读研究生工作的通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1134",
+            "title": "计算机学院院长助理选拔聘任工作的通知"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1133",
+            "title": "计算机学院关于计算机科学系主任、副主任聘任工作的通知"
+        }
+    ],
+    "bulletin": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1200",
+            "title": "计算机学院2019-2020学年研究生优秀学业奖学金获奖名单公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1192",
+            "title": "计算机学院2019年研究生优秀新生奖推荐名单公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1191",
+            "title": "计算机学院研究生学业奖学金评审实施细则公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1190",
+            "title": "计算机学院2019年研究生国家奖学金拟推荐名单公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1183",
+            "title": "计算机学院2018-2019学年度本科生评优、评奖结果公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1180",
+            "title": "计算机学院研究生国家奖学金评审实施细则公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1176",
+            "title": "2019年9月计算机学院本科生出国（境）交流学习奖学金 推荐名单公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1146",
+            "title": "计算机学院计算机科学系正、副主任拟任人选公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1140",
+            "title": "2019级弘毅学堂计算机科学与技术专业二次选拔学生面试名单"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1124",
+            "title": "我院研究生付刚等赴台湾参加国际会议公示"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1119",
+            "title": "国家多媒体软件工程技术研究中心 领导班子考察公告"
+        },
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1115",
+            "title": "2019年计算机学院夏令营营员入营公告(增补)"
+        }
+    ],
+    "lecture": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1200",
+            "title": "计算机学院2019-2020学年研究生优秀学业奖学金获奖名单公示"
+        }
+    ],
+    "sports": [
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3601.htm",
+            "title": "关于中共武汉大学第九届委员会第三巡察组巡察体育部党总支的公告"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3582.htm",
+            "title": "关于武汉大学健身房开放的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3521.htm",
+            "title": "关于举办2019年武汉大学学生乒乓球比赛的通知"
+        },
+        {
+            "url": "http://hr.whu.edu.cn/info/1013/2521.htm",
+            "title": "武汉大学体育部2019学年度公开招聘教师启事"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3443.htm",
+            "title": "2019年武汉大学学生环山跑（第二站)暨中国工商银行VISA星座跑竞赛规程"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3281.htm",
+            "title": "关于举行武汉大学2019年田径运动会的通知、竞赛规程及补充规定"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3342.htm",
+            "title": "武汉大学2018-2019学年本科优秀教学业绩奖推荐侯选人名单公示"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3291.htm",
+            "title": "关于举办2019年武汉大学“振兴杯”大学生足球比赛的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3582.htm",
+            "title": "关于武汉大学健身房开放的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3521.htm",
+            "title": "关于举办2019年武汉大学学生乒乓球比赛的通知"
+        },
+        {
+            "url": "http://hr.whu.edu.cn/info/1013/2521.htm",
+            "title": "武汉大学体育部2019学年度公开招聘教师启事"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3443.htm",
+            "title": "2019年武汉大学学生环山跑（第二站)暨中国工商银行VISA星座跑竞赛规程"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3281.htm",
+            "title": "关于举行武汉大学2019年田径运动会的通知、竞赛规程及补充规定"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3342.htm",
+            "title": "武汉大学2018-2019学年本科优秀教学业绩奖推荐侯选人名单公示"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3291.htm",
+            "title": "关于举办2019年武汉大学“振兴杯”大学生足球比赛的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3222.htm",
+            "title": "武汉大学体育部校运会表演服采购项目招标文件"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3171.htm",
+            "title": "2019年武汉大学学生广播操比赛竞赛规程"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3161.htm",
+            "title": "关于举办武汉大学2019年龙舟拔河比赛的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3142.htm",
+            "title": "2019年武汉大学新生篮球挑战赛竞赛规程"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3141.htm",
+            "title": "关于举办“迎军运”武汉大学校园定向赛的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3131.htm",
+            "title": "关于推荐2020届优秀高水平运动员本科毕业生免试攻读研究生的公示"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3121.htm",
+            "title": "关于聘任邢雅彬同志为高水平足球运动队教练员的通知"
+        },
+        {
+            "url": "http://tyb.whu.edu.cn/info/1004/3111.htm",
+            "title": "武汉大学推荐优秀应届高水平运动员免试攻读硕士研究生工作方案"
+        }
+    ],
+    "movie": [
+        {
+            "url": "http://ygb.whu.edu.cn/info/1024/13576.htm",
+            "title": "用微电影展示“我心中的思政课”--​第三届全国高校大学生微电影展示活动颁奖礼在我校举行"
+        },
+        {
+            "url": "http://www.future.org.cn/info/1103/22624.htm",
+            "title": "我院2019年心理健康教育活动之“远方”微电影创作大赛成功举办"
+        }
+    ],
+    "supermarket": [
+        {
+            "url": "http://www.future.org.cn/info/1112/22355.htm",
+            "title": "珞珈自强超市与校学生会权益部联合开展寻找“自强锦鲤王”活动"
+        }
+    ],
+    "whunews": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1200",
+            "title": "计算机学院2019-2020学年研究生优秀学业奖学金获奖名单公示"
+        }
+    ],
+    "holiday": [
+        {
+            "url": "http://cs.whu.edu.cn/news_show.aspx?id=1121",
+            "title": "计算机学院关于2019年学生放暑假的通知"
+        }
+    ],
+    "library": [
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479925&idx=1&sn=2605a785d027c19d4e0ba90140c2362a&chksm=80ae5253b7d9db4528a237e429b52b0a09f7ee88fba17a0857fa6e58090e7c64a09e8b5cf436&token=616691380&lang=zh_CN#rd",
+            "title": "《2018-2019学年武汉大学本科生阅读报告》来啦！"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996270&idx=1&sn=b167d1344258b687aee38fb4c6625b4f",
+            "title": "预告 | 音乐随心听【2019-15】"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479906&idx=1&sn=b5f233b56145ffa1dd84d355006ede4a&chksm=80ae5244b7d9db52b40cdf850400125f9679e3da8b2f836c0f696376a0a7474efdcbbd7dad67&token=1037334843&lang=zh_CN#rd",
+            "title": "重磅 | “书香大使”活动再度起航！"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996214&idx=1&sn=71aa60556c8767e7990924c90664bcd1",
+            "title": "“马工程”重点教材展开展啦！"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479856&idx=1&sn=9f4fa69154305c5a12ddbef1ca238d1a&chksm=80ae5196b7d9d880d09e66fa32b19783ec1307ca8f305dda623b2f5ecfc6ff0f137c18503126&token=1902258087&lang=zh_CN#rd",
+            "title": "【珞珈阅读广场】文化原型与跨文化演绎--莎士比亚两千年（戏剧之门）"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479824&idx=1&sn=b40ad82c5c45af6f4c9d68222aafdf3e&chksm=80ae51b6b7d9d8a0aeb6e4aa9b40c3acfba3199d1c9e47996fff5233fafafdc0e1f7dbabb5ab&token=1853479458&lang=zh_CN#rd",
+            "title": "预告 | 建筑摄影 · 理性与感性的融合"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479798&idx=1&sn=d30a48de68da46a95c3c156c437c1272&chksm=80ae51d0b7d9d8c6f01dbf159c8bca0870c28ffe8090c586c0814726d960d0389cdc36c56e38&token=2087652026&lang=zh_CN#rd",
+            "title": "预告｜人间行走--历代山水神品中的空间辨析"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12546",
+            "title": "图书馆信息科学分馆24小时开放通知"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12545",
+            "title": "数图教育多媒体资源服务平台开通试用！"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12544",
+            "title": "中国社会科学文库开通试用！"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12543",
+            "title": "一周培训一览（12.02-12.08）"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479796&idx=1&sn=85179de1fb6ba116ad084333c167b7e3&chksm=80ae51d2b7d9d8c48fe261f91a99095dcf10802f09fc73d53987e4fc090509cac6aee59567f5&token=1932305762&lang=zh_CN#rd",
+            "title": "预告 | 第二届湖北省高校“ 学术搜索挑战赛” 决赛"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12541",
+            "title": "关于公布“武汉大学第四届3D打印设计大赛”获奖名单的通知"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479766&idx=1&sn=d6671a6a64d7a86f6c41b1c5d4a19b81&chksm=80ae51f0b7d9d8e659595775d556fd514d7b84e82b200be3a8cff81e532ac6e2fdb0f69d3010&token=1762459428&lang=zh_CN#rd",
+            "title": "预告丨唇枪舌战在珞珈 第52期微天堂真人图书馆"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996112&idx=1&sn=797d56297a9e2128318c99b4424d9117",
+            "title": "预告 | 艺术映像大篷车【2019-10】"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996105&idx=1&sn=0ef010642e00df58a7a70b7e98444b1b",
+            "title": "预告 | 音乐随心听【2019-14】"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479726&idx=1&sn=994a5d9484deb774ffa19f15eb648cc8&chksm=80ae5108b7d9d81ee779a07bf81c4b446db1bb5dc79276e77468d3ac113b513e84e3afea8c5c&token=729540623&lang=zh_CN#rd",
+            "title": "全国首届“图书馆杯”全民英语口语风采展示活动获奖名单公示"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996077&idx=1&sn=6c25949e681ffcc12f8aa778d365c157",
+            "title": "【珞珈阅读广场】 “半是受害者，半是同谋”波伏瓦《第二性》研读（珞珈开卷）"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12535",
+            "title": "一周培训一览（11.25-12.01）"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=506996050&idx=1&sn=5133634e4d857bb9e920590623cadd08",
+            "title": "【珞珈阅读广场】 “自由·叛逆·玫瑰”——法语音乐剧巡礼（戏剧之门）"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12533",
+            "title": "一周培训一览（11.18-11.24）"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12532",
+            "title": "图书馆关于教职工健身运动会期间开放部分区域的通知"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12531",
+            "title": "Science of Synthesis(合成科学)数据库开通试用！"
+        },
+        {
+            "url": "https://view.email.taylorandfrancis.com/?qs=fe588c94030513e3a89fcd809652525bab78de305509302a57bc9f2b2e9dc5898bb26eae8881de13d6e3b5a359e83ca4feadc0f10fc727b0d684254a351bd87103ce9dc5738438f0726c0d9c73f5fb8d",
+            "title": "倾听您的声音——2019中国学者问卷调查"
+        },
+        {
+            "url": "http://www.lib.whu.edu.cn/news/view.asp?id=12529",
+            "title": "关于公布武汉大学第四届3D打印设计大赛决赛入围作品名单的通知"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479670&idx=1&sn=4afdd8d35f5ab5f967a189f236163bc5&chksm=80ae5150b7d9d846208a1c909eb5fe4f9c0ad32853d2d08c513cd1f4b2e3a5c0016fabbcd2df&token=329587539&lang=zh_CN#rd",
+            "title": "投票丨今天，你“盖楼”了吗？"
+        },
+        {
+            "url": "https://mp.weixin.qq.com/s?__biz=MzAwOTIyNTQ4MQ==&mid=2654479672&idx=1&sn=923eefa47b249c7d652fe6b9aa6aee65&chksm=80ae515eb7d9d848e2be59d5d4aa52f18cea44b25ff0c7fabbcab31df66e2b00e107c9c48b3b&token=329587539&lang=zh_CN#rd",
+            "title": "荐书丨如何优雅地度过双十一"
+        }
+    ]
+}
