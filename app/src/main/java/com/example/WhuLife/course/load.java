@@ -109,7 +109,7 @@ public class load extends AppCompatActivity {
                 LoginServer();
                 if(flag==1)
                     Get_courses();
-                if(flag!=2)
+                if(flag==0)
                     Toast.makeText(load.this,"登录失败，请重试",Toast.LENGTH_SHORT).show();
                 if(flag==2)
                     Toast.makeText(load.this,"登录成功",Toast.LENGTH_SHORT).show();
@@ -160,6 +160,10 @@ public class load extends AppCompatActivity {
 
     }
     private void LoginServer() {
+        if(mEtUserName.length() ==0||pwd.length() ==0||randcode.length() ==0){
+          //  Toast.makeText(load.this,"账号/密码未输入",Toast.LENGTH_SHORT).show();
+        }
+        else{
         RequestBody formBody1 = new FormBody.Builder()
                 .add("id", mEtUserName.getText().toString())//mEtUserName.getText().toString()
                 .add("pwd",md5(pwd.getText().toString()))//md5 pwd.getText().toString()
@@ -212,7 +216,7 @@ public class load extends AppCompatActivity {
 
             }
         });
-    }
+    }}
     private  void get_crsftoken(String html) {
         if (null != html) {
             Document document= Jsoup.parse(html);
