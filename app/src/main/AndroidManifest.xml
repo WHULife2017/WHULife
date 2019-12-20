@@ -30,6 +30,8 @@
                 <action android:name="com.example.WhuLife.LOCATIONMSG"/>
             </intent-filter>
         </receiver>
+        <receiver android:name="com.example.WhuLife.course.AlarmReceiver" android:process=":remote">
+        </receiver>
         <activity android:name=".noticelist.NoticelistMainActivity"></activity>
         <activity android:name=".subscription.SubscriptionMainActivity" />
         <activity android:name=".subscription.PreferenceActivity" />
