@@ -28,35 +28,34 @@
 
 输入账号密码验证码，抓取到的数据如下：
 
-![1576769367417](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576769367417.png)
+![data](.\img\data.png)
 
 ### 定位功能
 
 当前测试时间是上午近八点，修改地点定位的时间限制，运行后点击地点定位，可以看到如下提醒页面
 
-![1576799960036](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576799960036.png)
-
-
+![CourseNotice](.\img\CourseNotice.jpg)
 
 ### 手动加课
 
 如添加高数课程后，显示的课程信息如下：
 
-![1576770846698](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576770846698.png)
+![CurrentCourse](.\img\CurrentCourse.png)
 
 ### 手动撤课
 
+
+
 手动撤除高数后，显示的课程信息如下：
 
-![1576770879647](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576770879647.png)
+![CurrentCourse1](.\img\CurrentCourse1.png)
 
 ### 闹钟功能
 
 代码中闹钟部分用于提醒上课，如果打开时时间已经超过上课时间，会提醒设置时间已过。
 
-![1576800397429](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576800397429.png)
+![Timeover](.\img\Timeover.jpg)
 
 如果到设置时间，会生成提醒页面：
 
-![1576809152364](C:\Users\wujj\AppData\Roaming\Typora\typora-user-images\1576809152364.png)
-
+![Alarm](.\img\Alarm.jpg)
