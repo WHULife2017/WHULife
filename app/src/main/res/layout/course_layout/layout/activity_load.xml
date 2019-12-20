@@ -22,17 +22,11 @@
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:hint="学号"/>
-
     <EditText
         android:id="@+id/pwd_ed"
-<<<<<<< HEAD
+        android:maxLines="1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:maxLines="1"
-=======
-        android:layout_width="537dp"
-        android:layout_height="73dp"
->>>>>>> origin/master
         android:inputType="textPassword"
         android:hint="密码" />
     <LinearLayout
