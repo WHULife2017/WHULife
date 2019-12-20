@@ -24,11 +24,17 @@
 
 ## 测试情况
 
+### 主要功能
+
+![Function](./img/Function.jpg)
+
 ### 拉取课表
 
 输入账号密码验证码，抓取到的数据如下：
 
-![data](./img/data.png)
+![CourseTable](./img/CourseTable.jpg)
+
+
 
 ### 定位功能
 
@@ -40,21 +46,17 @@
 
 如添加高数课程后，显示的课程信息如下：
 
-![CurrentCourse](./img/CurrentCourse.png)
+![AfterAddCourse](./img/AfterAddCourse.jpg)
 
 ### 手动撤课
 
-
-
 手动撤除高数后，显示的课程信息如下：
 
-![CurrentCourse1](./img/CurrentCourse1.png)
+![AfterDeleteCourse](./img/AfterDeleteCourse.jpg)
 
 ### 闹钟功能
 
 代码中闹钟部分用于提醒上课，如果打开时时间已经超过上课时间，会提醒设置时间已过。
-
-![Timeover](./img/Timeover.jpg)
 
 如果到设置时间，会生成提醒页面：
 

@@ -20,8 +20,8 @@ public class course_display {
         location=Location;
         switch(start_time){
             case 1:hour=8;minute=0;break;
-            case 3:hour=9;minute=50;break;
-            case 6:hour=14;minute=5;break;
+            case 3:hour=20;minute=42;break;
+            case 6:hour=22;minute=5;break;
             case 8:hour=15;minute=40;break;
             case 11:hour=18;minute=30;break;
             default:hour=0;minute=0;
