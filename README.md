@@ -19,7 +19,6 @@ This is a project for WHUer to enjoy an easier campus life.
 - GitHub团队项目管理
 - Java语言
 
-
 ---------------------
 
 ## 2. 项目总体描述
@@ -109,3 +108,10 @@ This is a project for WHUer to enjoy an easier campus life.
 
 1. 在该界面中用户可以对添加的事件进行查看操作
 2. 用户可以在该界面中删除已经添加的活动，那么不再提醒
+
+错误处理
+
+![avater](show_img/error.png)
+
+1. 联网获取信息时会使用加载条，提醒用户系统正在加载资源
+2. 如果加载出错，弹窗提示用户系统状态异常。
