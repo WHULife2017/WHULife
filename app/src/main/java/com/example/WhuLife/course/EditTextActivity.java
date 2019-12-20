@@ -11,7 +11,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.amap.api.location.AMapLocationClient;
+import com.example.WhuLife.MainActivity;
 import com.example.WhuLife.R;
+import com.example.WhuLife.ui.Login.LoginActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -100,7 +102,7 @@ public class EditTextActivity extends AppCompatActivity {
                     double Latitude=cursor.getDouble(cursor.getColumnIndex("Latitude"));
                     double Longtitude=cursor.getDouble(cursor.getColumnIndex("Longtitude"));
                     String location=cursor.getString(cursor.getColumnIndex("location"));
-                    // System.out.println("courses" + cursor.getString(cursor.getColumnIndex("Cname")));
+                    System.out.println("day" + cursor.getString(cursor.getColumnIndex("day")));
                     if (week_n >= start_week && week_n <= end_week) {
                         System.out.println(week_n+"  "+ cursor.getString(cursor.getColumnIndex("Cname"))+weekday);
                         switch (weekday) {//根据周几显示
@@ -228,6 +230,10 @@ public class EditTextActivity extends AppCompatActivity {
             }
         });
     }
+    public void clicktable(View v){
+        Intent intent = new Intent(EditTextActivity.this, course_table.class);
+        startActivity(intent);
+    };
     @Override
     protected void onDestroy(){
         super.onDestroy();

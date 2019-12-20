@@ -37,15 +37,15 @@
         android:id="@+id/randcode"
         android:hint="验证码"
         android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
         android:layout_marginRight="15dp"
         android:layout_weight="1"
         android:maxLength="4"/>
     <ImageView
         android:id="@+id/photo"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_width="120dp"
         android:layout_weight="1"/>
-
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,19 +54,23 @@
         android:padding="15dp">
     <Button
         android:id="@+id/btn_changeImg"
+        android:layout_width="wrap_content"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:onClick="onclick"
         android:layout_marginRight="15dp"
         android:text="验证码"
-        android:background="@drawable/btn_bg_course"/>
+        android:background="@drawable/btn_bg_course"
+        tools:ignore="OnClick" />
     <Button
         android:id="@+id/tijiao"
         android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onclick"
         android:background="@drawable/btn_bg_course"
-        android:text="登录" />
+        android:text="登录"
+        tools:ignore="OnClick" />
     </LinearLayout>
 
 

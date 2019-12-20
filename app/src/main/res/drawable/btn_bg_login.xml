@@ -8,7 +8,7 @@
         android:topRightRadius="15dp" />
 
     <!-- 设置填充颜色 -->
-    <solid android:color="#AAB9D4" />
+    <solid android:color="#AAB9ee" />
     <!-- 设置边框颜色 -->
     <stroke android:width="2dp" android:color="@color/white"/>
 

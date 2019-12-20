@@ -5,20 +5,23 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:paddingBottom="60dp"
-    android:padding="10dp"
+    android:padding="15dp"
     android:background="@mipmap/bg_login">
 
-    <TextView
-        android:id="@+id/id"
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="这一页是显示课表的" />
+        android:onClick="clicktable"
+        android:background="@drawable/btn_bg_course"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="我的课表">
+    </Button>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
     <Button
         android:id="@+id/update"
         android:layout_width="wrap_content"
@@ -40,8 +43,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
     <Button
         android:id="@+id/addition"
         android:layout_width="wrap_content"

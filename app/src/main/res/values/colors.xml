@@ -11,6 +11,11 @@
     <color name="background_3">#fafafa</color>
     <color name="line">#989898</color>
 
+    <color name="classIndex" >#AAB9ee</color>
+    <color name="courseTextColor" >#ECECEC</color>
+    <color name="actionBarBg">#6666CC</color>
+    <color name="actionBarText">#EDEDED</color>
+
     <color name="account_lock_font_color">#FF68997C</color>
     <color name="account_lock_bg">#ff43815c</color>
     <color name="account_input_color">#c9c9c9</color>

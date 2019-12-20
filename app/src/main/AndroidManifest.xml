@@ -49,6 +49,7 @@
         <activity android:name=".location.Locate" />
         <activity android:name=".location.LocationMainActivity" />
         <activity android:name=".location.PackageActivity" />
+        <activity android:name=".course.course_table"/>
         <activity
             android:name=".ui.Login.LoginActivity"
             android:label="@string/app_name"></activity>
@@ -64,7 +65,7 @@
         </activity>
         <meta-data
             android:name="com.amap.api.v2.apikey"
-            android:value="6eed0fdffcf3f66f873c739ccb5d8872" />
+            android:value="@string/myapplication" />
 
         <service android:name="com.amap.api.location.APSService" />
     </application>
