@@ -111,6 +111,8 @@ public class load extends AppCompatActivity {
                     Get_courses();
                 if(flag!=2)
                     Toast.makeText(load.this,"登录失败，请重试",Toast.LENGTH_SHORT).show();
+                if(flag==2)
+                    Toast.makeText(load.this,"登录成功",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -233,7 +235,7 @@ public class load extends AppCompatActivity {
     }
     private void getViewStateValue(String html){
         if(null!=html){
-            flag=2;
+
             Document doc= Jsoup.parse(html);
             Elements trs = doc.select("table").select("tr");
             System.out.println(trs.size());
@@ -283,6 +285,7 @@ public class load extends AppCompatActivity {
                 }
             }
             if(trs.size()!=0) {
+                flag=2;
                 dbhelper = new MySqliteHelper(this);
                 SQLiteDatabase sqLiteDatabase = dbhelper.getWritableDatabase();
                 dbhelper.onCreate(sqLiteDatabase);
